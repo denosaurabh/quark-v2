@@ -67,9 +67,9 @@ export default function Home() {
         <div className="flex flex-col gap-5">
           <h5 className="text-zinc-800 font-medium">who am i?</h5>
           <p className="font-mono text-zinc-600 text-sm max-w-5xl">
-            yo, I am denosaurabh. I am have been working as a Software Engineer
-            for the past 4 years, and now I have growing interest in Art,
-            especially Nature Art.
+            yo, I am denosaurabh. I have been working as a Software Engineer for
+            the past 4 years, and now I have growing interest in Art, especially
+            Nature Art.
             <br />
             Though I love mostly every art style, my absolute favourites are
             Tonalism & Ghibli.

@@ -1,124 +1,126 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Head from "next/head";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Head>
+        <title>Quark</title>
+      </Head>
+
+      <main className="flex min-h-screen w-full flex-col gap-8 p-6 lg:p-24">
+        <div className="w-full flex flex-col gap-5 justify-between font-mono text-sm items-start lg:flex-row lg:items-center">
+          <p className="justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl w-auto rounded-xl border bg-gray-200 p-4">
+            <code className="font-mono font-bold">Quark</code>&nbsp;- helping
+            creatives showcase their work through web experiences
+          </p>
+          <div className="flex items-end justify-center from-white via-white lg:static h-auto w-auto bg-none">
+            <p>by</p>
+            <a
+              href="https://denosaurabh.me"
+              target="_blank"
+              className="ml-2 hover:underline underline-offset-4"
+            >
+              @denosaurabh
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Find in-depth information about Next.js features and API.
+        <div className="flex flex-col gap-5 max-w-5xl">
+          <h5 className="text-zinc-800 font-medium">
+            what&apos;s this and for who?
+          </h5>
+          <p className="text-zinc-600 text-sm gap-1 font-mono">
+            if you are a creative looking to showcase your work on web, through
+            a web game. Quark is for you. We wish to help writers bring their
+            stories on web through art, and help indie game-devs showcase their
+            games on web. Especially in form of 2D Parallax & 2D/3D Isometric.
+            <br />
+            whatever art style you love, we are happy to build a beautiful
+            experience for you.
           </p>
-        </a>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div className="flex flex-col gap-5">
+          <h5 className="text-zinc-800 font-medium">looking for demos?</h5>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/demos/platformer-1"
+              className="text-zinc-600 text-sm gap-1 font-mono underline-offset-4 hover:underline hover:cursor-pointer"
+            >
+              2D Parallax demo - simple sketch
+            </Link>
+            <p className="text-zinc-500 text-sm gap-1 italic font-mono underline-offset-4">
+              2D Isometric - coming soon..
+            </p>
+            <p className="text-zinc-500 text-sm gap-1 italic font-mono underline-offset-4">
+              3D Isometric - coming soon..
+            </p>
+          </div>
+        </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <div className="flex flex-col gap-5">
+          <h5 className="text-zinc-800 font-medium">who am i?</h5>
+          <p className="font-mono text-zinc-600 text-sm max-w-5xl">
+            yo, I am denosaurabh. I am have been working as a Software Engineer
+            for the past 4 years, and now I have growing interest in Art,
+            especially Nature Art.
+            <br />
+            Though I love mostly every art style, my absolute favourites are
+            Tonalism & Ghibli.
+            <br />
+            <br />
+            so I thought why not to create a small studio helping other
+            creatives bring their artistic visions on web :)
           </p>
-        </a>
-      </div>
-    </main>
-  )
+        </div>
+
+        <div className="flex flex-col gap-5">
+          <h5 className="text-zinc-800 font-medium">past clients</h5>
+          <p className="text-zinc-600 text-sm gap-1 font-mono decoration-zinc-500 underline underline-offset-4 decoration-wavy">
+            be our first
+          </p>
+
+          <p className="font-mono text-zinc-600 text-sm max-w-5xl">
+            to be clear it&apos;s a very new studio and we don&apos;t have much
+            experience doing professional art. for this reason, we are happy to
+            work with you with small budgets :)
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-5">
+          <h5 className="text-zinc-800 font-medium">shall we begin :)</h5>
+
+          <p className="text-zinc-700 font-mono text-sm">
+            don&apos;t worry about sending a lengthy formal email... we
+            understand you are hardworking creatives with busy schedules.
+            <br />
+            <br />
+            tell us what you are writing, building or creating. even just a
+            title or a short description will make us happy.
+          </p>
+
+          <div className=">text-zinc-600 text-sm flex flex-col gap-1 font-mono">
+            <p>
+              <span className="text-zinc-500 font-light">email</span> -
+              denosaurabh@gmail.com
+            </p>
+            <p>
+              <span className="text-zinc-500 font-light">twitter</span> -
+              @denosaurabh
+            </p>
+            <p>
+              <span className="text-zinc-500 font-light">discord</span> -
+              denosaurabh#8275
+            </p>
+          </div>
+        </div>
+      </main>
+    </>
+  );
 }

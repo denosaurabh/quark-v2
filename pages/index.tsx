@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex flex-col gap-3">
             <Link
               href="/demos/platformer-1"
-              className="text-zinc-600 text-sm gap-1 font-mono underline-offset-4 hover:underline hover:cursor-pointer"
+              className="text-zinc-600 text-sm gap-1 font-mono underline-offset-4 underline hover:cursor-pointer"
             >
               2D Parallax demo - simple sketch
             </Link>

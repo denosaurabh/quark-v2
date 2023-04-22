@@ -4,6 +4,12 @@ import NextImage from "next/image";
 const App = () => {
   return (
     <>
+      <p className="absolute bottom-0 left-0 p-8 text-lg uppercase">
+        Scroll Right to see more..
+        <br />
+        Only works on Desktop right now
+      </p>
+
       <Layer>
         <div>
           <Image speed={1} src="/1/1.png" />
